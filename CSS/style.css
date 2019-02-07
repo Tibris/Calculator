@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../IMG/desert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url(Orbitron-Regular.ttf);
+}
+
+.calculator {
+    width: 36%;
+    margin: 45px auto;
+    overflow: hidden;
+    border: solid 8px rgb(10, 10, 10);
+    border-radius: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    column-gap: 1px;
+    row-gap: 1px;
+    background-color: floralwhite;
+}
+
+.grid-container3col {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    column-gap: 1px;
+    background-color: floralwhite;
+    border-bottom: solid 1px white;
+}
+
+.grid-container > button {
+    height: 100px;
+    background-color: #C3073F;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+}
+
+.grid-container3col > button {
+    height: 100px;
+    background-image: linear-gradient(black, rgb(54, 46, 46));
+    font-size: 28px;
+    color: floralwhite;
+    border: none;
+}
+
+#results-div {
+    width: 100%;
+    height: 80px;
+    font-size: 60px;
+    padding: 5px;
+    border: solid 2px black;
+    font-family: 'Orbitron', sans-serif;
+    background-color: floralwhite;
+}
+
+#division, #multiplication, #subtraction, #addition{
+    background-color: rgb(32, 11, 15);
+    color: floralwhite;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+button:active {
+    background-image: linear-gradient(white,gray);
+    color:black;
+    opacity: 0.8;
+}
+
+#division:active,#multiplication:active,#addition:active,#subtraction:active{
+    color:black;
+}

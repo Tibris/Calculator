@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tibris Calculator</title>
+        <link type = "text/css" rel = "stylesheet" href = "CSS/style.css">
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta name = "author" content = "TIBRIS">
+        <meta name = "keyword" content = "calculator, free">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="icon" type="image/ico" href="IMG/calculator.png" />
+    </head>
+    
+    <body>
+        <div class="calculator">
+            <div id="results-div"></div>
+            <div class="grid-container3col">
+                <button id="clear">C</button>
+                <button><i id="backspace" class="fas fa-backspace"></i></button>
+                <button id="modulus" onclick = "eraseNum();operation(this.id);">%</button>
+            </div>
+            <div class="grid-container">
+               <button id="seven" onclick="displayNum('7')" >7</button>
+               <button id="eight" onclick="displayNum('8')">8</button>
+               <button id="nine" onclick="displayNum('9')">9</button>
+               <button id="division" onclick = "eraseNum();operation(this.id);">/</button>
+               <button id="four" onclick="displayNum('4')">4</button>
+               <button id="five" onclick="displayNum('5')">5</button>
+               <button id="six" onclick="displayNum('6')">6</button>
+               <button id="multiplication" onclick = "eraseNum();operation(this.id);">x</button>
+               <button id="one" onclick="displayNum('1')">1</button>
+               <button id="two" onclick="displayNum('2')">2</button>
+               <button id="three" onclick="displayNum('3')">3</button>
+               <button id="subtraction" onclick = "eraseNum();operation(this.id);">-</button>
+               <button id="zero" onclick="displayNum('0')">0</button>
+               <button id="dot" onclick="displayNum('.')">.</button>
+               <button id="equal" onclick="equalOperator();" >=</button>
+               <button id="addition" onclick = "eraseNum();operation(this.id);">+</button>
+            </div>
+        </div>
+    <script src="JS/main.js"></script>
+    </body>
+
+
+
+</html>
