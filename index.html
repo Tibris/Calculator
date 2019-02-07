@@ -12,30 +12,32 @@
     </head>
     
     <body>
+        <h1>Calculator</h1>
+        <h3>I know you don't need one in a desert, but I couldn't resist to the background.</h3>
         <div class="calculator">
             <div id="results-div"></div>
             <div class="grid-container3col">
                 <button id="clear">C</button>
-                <button><i id="backspace" class="fas fa-backspace"></i></button>
-                <button id="modulus" onclick = "eraseNum();operation(this.id);">%</button>
+                <button id="backspace"><i class="fas fa-backspace"></i></button>
+                <button id="modulus">%</button>
             </div>
             <div class="grid-container">
-               <button id="seven" onclick="displayNum('7')" >7</button>
-               <button id="eight" onclick="displayNum('8')">8</button>
-               <button id="nine" onclick="displayNum('9')">9</button>
-               <button id="division" onclick = "eraseNum();operation(this.id);">/</button>
-               <button id="four" onclick="displayNum('4')">4</button>
-               <button id="five" onclick="displayNum('5')">5</button>
-               <button id="six" onclick="displayNum('6')">6</button>
-               <button id="multiplication" onclick = "eraseNum();operation(this.id);">x</button>
-               <button id="one" onclick="displayNum('1')">1</button>
-               <button id="two" onclick="displayNum('2')">2</button>
-               <button id="three" onclick="displayNum('3')">3</button>
-               <button id="subtraction" onclick = "eraseNum();operation(this.id);">-</button>
-               <button id="zero" onclick="displayNum('0')">0</button>
-               <button id="dot" onclick="displayNum('.')">.</button>
-               <button id="equal" onclick="equalOperator();" >=</button>
-               <button id="addition" onclick = "eraseNum();operation(this.id);">+</button>
+               <button id="seven">7</button>
+               <button id="eight">8</button>
+               <button id="nine">9</button>
+               <button id="division">/</button>
+               <button id="four">4</button>
+               <button id="five">5</button>
+               <button id="six">6</button>
+               <button id="multiplication">x</button>
+               <button id="one">1</button>
+               <button id="two">2</button>
+               <button id="three">3</button>
+               <button id="subtraction">-</button>
+               <button id="zero">0</button>
+               <button id="dot">.</button>
+               <button id="equal">=</button>
+               <button id="addition">+</button>
             </div>
         </div>
     <script src="JS/main.js"></script>
